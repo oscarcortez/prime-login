@@ -6,7 +6,7 @@ import { useFormik } from 'formik'
 
 export const Login: FunctionComponent = (): ReactNode => {
   const bottomLeftLink = (
-    <Link to="/forgot-password" className="text-gray-500 hover:underline">
+    <Link to="/forget-password" className="text-gray-500 hover:underline">
       Forgot Password?
     </Link>
   )
@@ -17,7 +17,12 @@ export const Login: FunctionComponent = (): ReactNode => {
     </Link>
   )
 
-  const formik = useFormik({
+  type FormValues = {
+    email: string
+    password: string
+  }
+
+  const formik = useFormik<FormValues>({
     initialValues: {
       email: '',
       password: ''

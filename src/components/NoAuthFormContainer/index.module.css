@@ -1,16 +1,16 @@
 .form {
-  @apply bg-red-200 
+  @apply bg-white
         p-8
         shadow-md
         rounded-lg
         w-full
+        space-y-10
         md:w-96;
 }
 
 .title {
   @apply text-3xl 
-        font-bold 
-        text-gray-800
+        font-bold         
         text-center
         uppercase;
 }

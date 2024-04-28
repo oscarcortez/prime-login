@@ -24,7 +24,7 @@ export const NoAuthFormContainer: FunctionComponent<
         <div className="mb-10">
           <h1 className={styles.title}>{title}</h1>
         </div>
-        <form className="flex flex-col gap-3" action="" onSubmit={onSubmit}>
+        <form className="flex flex-col gap-3 space-y-4" onSubmit={onSubmit}>
           {children}
         </form>
         <div className="mt-5 text-center">
