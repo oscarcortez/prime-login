@@ -45,7 +45,7 @@ export const LoginForm: FunctionComponent<LoginFormProps> = ({
         <span className="p-float-label">
           <Password
             id="password"
-            // className="[&>input]:w-full w-full"
+            className="[&>input]:w-full w-full"
             // toggleMask
             {...formik.getFieldProps('password')}
           />
